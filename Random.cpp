@@ -1,7 +1,7 @@
 #include "Random.h"
 
 
-double Random::getNormal()
+double Random::getNormalBoxMuller()
 {
 	double result;
 
