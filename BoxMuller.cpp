@@ -1,7 +1,7 @@
-#include "Random.h"
+#include "BoxMuller.h"
 
 
-double Random::getNormalBoxMuller()
+double BoxMuller::getNormal()
 {
 	double result;
 
@@ -22,7 +22,7 @@ double Random::getNormalBoxMuller()
 	return result;
 }
 
-void Random::setSeed(int x)
+void BoxMuller::setSeed(int x)
 {
 	if (x >= 0) srand(x);
 	else srand(time(NULL));

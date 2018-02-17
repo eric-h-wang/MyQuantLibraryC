@@ -3,14 +3,14 @@
 #include <algorithm>
 #include <time.h>
 
-class Random
+class BoxMuller
 {
 public:
-	virtual ~Random() = 0;
-	static double getNormalBoxMuller();	//Box Muller
+	virtual ~BoxMuller() = 0;
+	static double getNormal();	//Box Muller
 
 	static void setSeed(int x);
 private:
-	Random() {};
+	BoxMuller() {};
 };
 
